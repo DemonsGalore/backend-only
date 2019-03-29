@@ -1,0 +1,28 @@
+{
+  "name": "backend-only",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemonsGalore/backend-only.git"
+  },
+  "author": "Andreas Stopat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemonsGalore/backend-only/issues"
+  },
+  "homepage": "https://github.com/DemonsGalore/backend-only#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.2.0",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
