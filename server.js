@@ -14,7 +14,8 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 // connect to MongoDB
-const db = require('./config/keys').mongoURI;
+// const db = require('./config/keys').mongoURI;
+const db = process.env.mongoURI;
 
 mongoose
   .connect(db, {
