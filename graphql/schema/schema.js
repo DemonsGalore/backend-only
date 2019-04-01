@@ -70,7 +70,7 @@ const RootQuery = new GraphQLObjectType({
             throw new Error('Password is incorrect!');
           }
           const token = jwt.sign(
-            { userId: user.id, email: user.email },
+            { userId: user.id, email: user.email, username: user.username },
             'supersecretkey',
             { expiresIn: '1h' }
           );
